@@ -1,0 +1,318 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+h1{
+	color: #14337F;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+body > .estela{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: rgba(0,0,0,.5);
+}
+input{
+	border-radius:3px;
+	-o-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow: 0 0 5px rgba(20, 51, 127,.3);
+	-moz-box-shadow: 0 0 5px rgba(20, 51, 127,.3);
+	-ms-box-shadow: 0 0 5px rgba(20, 51, 127,.3);
+	-o-box-shadow: 0 0 5px rgba(20, 51, 127,.3);
+	-webkit-box-shadow: 0 0 5px rgba(20, 51, 127,.3);
+}
+input[type='text']{
+	border:1px solid rgb(20, 51, 127);
+	padding: 5px;
+}
+input[type='submit'],select{
+	border:none;
+	padding: 5px;
+}
+#wrapper{
+	max-width: 1280px;
+	margin:0 auto;
+	position: relative;
+}
+#wrapper .reg{
+	width: 50%;
+}
+#wrapper .reg input{
+	display: block;
+}
+#wrapper .reg input[type='text']{
+	margin-top: 15px ;
+	width: 100%;
+}
+#wrapper .reg >div{
+	display: inline-block;
+	width: 40%;
+}
+#wrapper .reg label{
+	display: block;
+	margin-top: 20px;
+}
+#wrapper .reg>div+div{
+	padding-left: 20px;
+}
+#wrapper .reg input[type='submit']{
+	margin-top: 30px;
+	background-color: #4DBA17;
+	color: white;
+	border:none;
+}
+#wrapper > div:first-child{
+	display: none;
+	position: absolute;
+	width: 95%;
+	left: 2.5%;
+	top:150px;
+	padding: 20px;
+	height: 550px;
+	z-index: 3;
+	background-color: #fff;
+}
+#wrapper > div:first-child > div:first-child{
+	border: 3px #14337F dashed;
+	position: relative;
+	padding: 20px;
+	height: 100%;
+}
+#wrapper > div:first-child > div:first-child > div{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+#wrapper > div:first-child > div:first-child > div:first-child img{
+	width: 100%;
+	height: 280px;
+}
+#wrapper > div:first-child > div:first-child > div:first-child img + div{
+	width: 85%;
+	float:right;
+	border-right: 1px solid #14337F;
+	margin-top: 40px;
+}  
+#wrapper > div:first-child > div:first-child > div:last-child > div{
+	background-color: #14337F;
+	color: white ;
+	padding: 20px;
+	height: 280px;
+}
+#wrapper > div:first-child > div:first-child > div:last-child > div h1{
+	color: white;
+}
+#wrapper > div:first-child > div:first-child > div:last-child > form{
+	background-color: #fff;
+	position: relative;
+	bottom: 0;
+	width: 80%;
+	height: 185px;
+	padding: 20px;
+	top: 10px;
+}
+#wrapper > div:first-child > div:first-child > div:last-child > form label:first-child{
+	display: block;
+}
+#wrapper > div:first-child > div:first-child > div:last-child > form input{
+	width: 100%;
+	margin-top: 10px;
+	border-color: #14337F;
+}
+#wrapper > div:first-child > div:first-child > div:last-child > form > div{
+	margin-top: 20px;
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+#wrapper > header{
+	margin: 0 auto;
+	text-align: center;
+}
+#wrapper > header>h1{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 80px;
+}
+#wrapper > header > nav{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 80px;
+}
+#wrapper > header > nav li{
+	display: inline-block;
+	padding:10px;
+	font-weight: bold;
+}
+#wrapper > header > aside{
+	position: relative;
+	top: 10px;
+	display: inline-block;
+	margin-left: 150px;
+}
+#wrapper > header > aside > p:nth-child(1){
+	font-weight: bold;
+}
+#wrapper > header > aside > p:nth-child(2){
+	letter-spacing: 5px;
+}
+#wrapper > header > aside > p:nth-child(3){
+	letter-spacing: 10px;
+	font-size: 18px;
+}
+#wrapper > main {
+	position: relative;
+	margin-top: 50px;
+}
+#wrapper > main >h1{
+	color: #14337F;
+	display: inline-block;
+}
+#wrapper > main > form{
+	display: inline-block;
+	margin-left: 50px;
+}
+#wrapper > main > form p{
+	display: inline-block;
+}
+#wrapper > main > form select{
+	background-color: #4DBA17;
+	padding: 10px;
+	color: white;
+}
+#wrapper > main > form input[type='submit']{
+	background: #14337F;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content {
+	clear: both;
+}
+#paginador{
+	position: relative;
+	float: right;
+}
+#paginador li{
+	display: inline-block;
+	margin-right: 30px;
+}
+#paginador li:last-child img{
+	width: 12px;
+	height: 20px;
+	padding-top: 5px;
+}
+#paginador a{
+	color: #14337F;
+}
+#paginador .current{
+	padding: 5px;
+	background-color: #14337F;
+	color: white;
+}
+#items{
+	clear: both;
+	padding-top: 20px;
+}
+.cupon{
+	display: inline-block;
+	height: 207px;
+	position: relative;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+.bg,.descripcion{
+	height: 100%;
+	float: left;
+}
+.bg{
+	width: 217px;
+	position: relative;
+}
+.solapa{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	cursor: pointer;
+}
+.enlace{
+	position: absolute;
+	top:45%;
+	background-color: #14337F;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: white;
+}
+
+.bg > img{
+	width: 100%;
+	height: 100%;
+}
+.descripcion{
+	width: 168px;
+	padding-left:20px;
+	padding-right: 20px;
+	position: relative;
+	background: url(http://lorempixel.com/output/food-q-c-217-207-8.jpg);
+}
+.descripcion h1{
+	color: #173799;
+	font-size: 24px;
+}
+.descripcion p{
+	font-size: 13px;
+}
+.tanta{
+	position: absolute;
+	bottom: 20px;
+	left: 25%;
+	width: 82px;
+	height: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
